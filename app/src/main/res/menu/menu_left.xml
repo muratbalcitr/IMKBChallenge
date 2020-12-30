@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/stochIndex"
+        android:title="@string/stochIndex" />
+    <item
+        android:id="@+id/imkbUp"
+        android:title="@string/imkbUp" />
+    <item
+        android:id="@+id/imkbDown"
+        android:title="@string/imkbDown" />
+    <group android:title="@string/imkbVolume">
+        <item
+            android:id="@+id/imkbOne"
+            android:title="@string/imkb_30" />
+        <item
+            android:id="@+id/imkbTwo"
+            android:title="@string/imkb_50" />
+        <item
+            android:id="@+id/imkbThree"
+            android:title="@string/imkb_70" />
+    </group>
+
+</menu>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">IMKB</string>
+
+    <string name="user_not_found_error">Kullanıcı bulunamadı</string>
+    <string name="something_went_wrong">Bir hata oluştu</string>
+    <string name="connectivity_error">Lütfen internet bağlantınızı kontrol ediniz</string>
+    <string name="internal_server_not_found">Opps.. Bir sorun oluştu</string>
+    <string name="attention">Dikkat</string>
+    <string name="stochIndex">Hisse ve Endeksler</string>
+    <string name="imkbUp">Yükselenler</string>
+    <string name="imkbDown">Düşenler</string>
+    <string name="imkbVolume">Hacme Göre</string>
+    <string name="imkb_50">Hacme Göre-50</string>
+    <string name="imkb_30">Hacme Göre-30</string>
+    <string name="imkb_70">Hacme Göre-100</string>
+    <string name="company_name">VERİPARK</string>
+    <string name="header_description">Hisse Senetler/Endeksler</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="symbol">Sembol</string>
+    <string name="price">Fiyat</string>
+    <string name="diff">Fark</string>
+    <string name="volume">Hacim</string>
+    <string name="buy">Alış</string>
+    <string name="sell">Satış</string>
+    <string name="change">Değişim</string>
+    <string name="toolbar">IMKB Hisse ve Senetler</string>
+    <string name="search">Ara</string>
+    <string name="symbol_detail">Sembol: %1$s</string>
+    <string name="price_detail">Fiyat: %1$s</string>
+    <string name="diff_detail">Fark: %1$s</string>
+    <string name="volume_detail">Hacim: %1$s</string>
+    <string name="bid_detail">Alış: %1$s</string>
+    <string name="sell_detail">Satış: %1$s</string>
+    <string name="day_min_detail">Günlük Düşük: %1$s</string>
+    <string name="day_max_detail">Günlük Yüksek: %1$s</string>
+    <string name="piece_detail">Adet: %1$s</string>
+    <string name="highest_detail">Tavan: %1$s</string>
+    <string name="lowest_detail">Taban: %1$s</string>
+</resources>

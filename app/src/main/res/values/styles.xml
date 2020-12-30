@@ -1,0 +1,206 @@
+<resources>
+
+    <style name="NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- Typography -->
+    <style name="TextStyle4">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.31</item>
+    </style>
+
+    <style name="TextStyle4b">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.31</item>
+    </style>
+
+    <style name="TextStyle3">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+    </style>
+
+    <style name="TextStyle3b">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+    </style>
+
+    <style name="TextStyle2">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.17</item>
+    </style>
+
+    <style name="TextStyle2white">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingMultiplier">1.17</item>
+    </style>
+
+    <style name="TextStyle2b">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.17</item>
+    </style>
+
+    <style name="TextStyle2bwhite">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:translationY">-2.07sp</item>
+    </style>
+
+    <style name="TextStyle1">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextStyle1b">
+        <item name="android:fontFamily">@font/sf_compact_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextStyle1bgreen">
+        <item name="android:fontFamily">@font/sf_compact_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textColor">@color/sky_dark_green</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="TextStyle0">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_0</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextStyle0b">
+        <item name="android:fontFamily">@font/sf_compact_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_0</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextStyle0bn">
+        <item name="android:fontFamily">@font/sf_compact_display_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sky_dark_green</item>
+    </style>
+
+    <style name="TextStyle0bn1">
+        <item name="android:fontFamily">@font/sf_compact_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/sky_dark_green</item>
+    </style>
+
+    <style name="TextStylen1">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextStylen1white">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStylen1green">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/sky_dark_green</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="TextStylen1b">
+        <item name="android:fontFamily">@font/sf_compact_display_bold</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextStylen2">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_n2</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="caption">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dimmed_text</item>
+    </style>
+
+    <style name="caption_bold">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dimmed_text</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:translationY">-1.65sp</item>
+    </style>
+
+    <style name="title">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="subtitle">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dimmed_text</item>
+    </style>
+
+    <style name="about_phone">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_0</item>
+        <item name="android:textColor">@color/main_green</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:translationY">-1.65sp</item>
+    </style>
+
+    <style name="order">
+        <item name="android:linksClickable">true</item>
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">@dimen/text_size_0</item>
+        <item name="android:textColor">@color/main_green</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:translationY">-1.65sp</item>
+    </style>
+
+    <style name="summary_item_title">
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dimmed_text</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.Navigation.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Navigation.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

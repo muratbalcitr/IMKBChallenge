@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.murat.veripark.ui.main.MainViewModel" />
+
+        <variable
+            name="item"
+            type="com.murat.veripark.network.responses.Stocks.StocksResponse" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow"
+        android:minHeight="@dimen/margin_48dp"
+        android:onClick="@{()->viewModel.handleItemClick(item)}">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/sembol_text_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@{item.symbol}"
+                android:gravity="center"
+                tools:text="123a" />
+
+            <TextView
+                android:id="@+id/price_text_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@{item.price.toString()}"
+                android:gravity="center"
+                tools:text="123a" />
+
+            <TextView
+                android:id="@+id/diff_text_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@{item.difference.toString()}"
+                android:gravity="center"
+                tools:text="123a" />
+
+            <TextView
+                android:id="@+id/volume_text_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{item.formattedVolume.toString()}"
+                tools:text="123a" />
+
+            <TextView
+                android:id="@+id/buy_text_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{item.bid.toString()}"
+                tools:text="123a" />
+
+            <TextView
+                android:id="@+id/sell_text_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@{item.offer.toString()}"
+                android:gravity="center"
+                tools:text="123a" />
+
+            <ImageView
+                android:id="@+id/change_image_view"
+                android:layout_width="@dimen/margin_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                imageDrawable="@{item.isDown()?@drawable/ic_down:@drawable/ic_up}"
+                android:gravity="center"
+                tools:src="@drawable/ic_swap_calls_black_24dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

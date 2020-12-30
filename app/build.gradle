@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        applicationId "com.murat.usg_challenge"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode app_versions.version_code
+        versionName app_versions.version_name
+        project.ext.set("archivesBaseName", applicationId + "." + versionName)
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+
+            buildConfigField "String", "APP_BASE_URL", "$APP_BASE_URL_DEV"
+
+        }
+        beta {
+            debuggable false
+            minifyEnabled true
+
+            buildConfigField "String", "APP_BASE_URL", "$APP_BASE_URL_DEV"
+
+        }
+
+        alpha {
+            debuggable false
+            minifyEnabled true
+
+            buildConfigField "String", "APP_BASE_URL", "$APP_BASE_URL_DEV"
+
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+
+            buildConfigField "String", "APP_BASE_URL", "$APP_BASE_URL_PROD"
+
+        }
+    }
+    buildTypes.all {
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    dataBinding {
+        enabled = true
+        enabledForTests = true
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.kotlin.stdlib
+    implementation deps.kotlin.coroutinesCore
+    implementation deps.kotlin.coroutinesAndroid
+
+    implementation deps.support.app_compat
+    implementation deps.support.app_compat_v7
+    implementation deps.support.app_compat_v4
+    implementation deps.support.legacy_support
+    implementation deps.support.core_ktx
+    implementation deps.support.constraint_layout
+    implementation deps.support.recycler_view
+    implementation deps.support.fragment
+    implementation deps.support.fragment_ktx
+
+    implementation deps.support.lifecycle_extensions
+    implementation deps.support.lifecycle_viewmodel
+    implementation deps.support.lifecycle_runtime
+    implementation deps.support.lifecycle_livedata
+    kapt deps.data_binding
+
+    implementation deps.support.navigation_fragment
+    implementation deps.support.navigation_ui
+
+    implementation deps.squareup.retrofit
+    implementation deps.squareup.gson_converter
+    implementation deps.squareup.scalars
+
+    implementation deps.squareup.okhttp
+    implementation deps.squareup.logging_interceptor
+
+    implementation deps.koin.android
+    implementation deps.koin.viewmodel
+    implementation deps.koin.scope
+
+    implementation deps.jaxb
+    implementation deps.coil
+     implementation deps.chart
+    implementation group: 'bouncycastle', name: 'bcprov-jdk16', version: '136'
+
+}
+

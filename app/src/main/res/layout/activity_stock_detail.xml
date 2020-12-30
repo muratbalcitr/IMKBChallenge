@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.murat.veripark.ui.main.stockDetail.StockDetailViewModel" />
+    </data>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/mainFl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="@drawable/ic_back"
+                app:title="IMKB DETAY" />
+
+            <LinearLayout
+                android:id="@+id/mainll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+
+                            android:id="@+id/symbol_text_view"
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shadow"
+                            android:gravity="center|start"
+                            android:paddingStart="@dimen/margin_small"
+                            tools:text="0.00" />
+
+                        <TextView
+                            android:paddingEnd="@dimen/margin_small"
+                            android:background="@drawable/bg_shadow"
+
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|end"
+                            android:text="@{String.format(@string/day_min_detail,viewModel.stockDetails.minimum.toString())}"
+                            tools:text="0.00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shadow"
+                            android:gravity="center|start"
+                            android:paddingStart="@dimen/margin_small"
+                            android:text="@{String.format(@string/price_detail,viewModel.stockDetails.price.toString())}" />
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="@dimen/margin_small"
+                            android:background="@drawable/bg_shadow"
+
+                            android:layout_weight="1"
+                            android:gravity="center|end"
+                            android:text="@{String.format(@string/day_max_detail,viewModel.stockDetails.maximum.toString())}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shadow"
+                            android:gravity="center|start"
+                            android:paddingStart="@dimen/margin_small"
+                            android:text="@{String.format(@string/diff_detail,viewModel.stockDetails.difference.toString())}" />
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="@dimen/margin_small"
+                            android:background="@drawable/bg_shadow"
+                            android:layout_weight="1"
+                            android:gravity="center|end"
+                            android:text="@{String.format(@string/piece_detail,viewModel.stockDetails.count.toString())}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shadow"
+                            android:gravity="center|start"
+                            android:paddingStart="@dimen/margin_small"
+                            android:text="@{String.format(@string/volume_detail,viewModel.stockDetails.volume.toString())}" />
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:paddingEnd="@dimen/margin_small"
+                            android:background="@drawable/bg_shadow"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|end"
+                            android:text="@{String.format(@string/highest_detail,viewModel.stockDetails.highest.toString())}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="@{String.format(@string/bid_detail,viewModel.stockDetails.bid.toString())}" />
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                             android:gravity="center|end"
+                            android:paddingEnd="@dimen/margin_small"
+                            android:background="@drawable/bg_shadow"
+
+                            android:paddingStart="@dimen/margin_small"
+                            android:text="@{String.format(@string/lowest_detail,viewModel.stockDetails.lowest.toString())}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            style="@style/TextStyle1b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shadow"
+                            android:gravity="center|start"
+
+                            android:paddingStart="@dimen/margin_small"
+                            android:text="@{String.format(@string/sell_detail,viewModel.stockDetails.offer.toString())}" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="@dimen/margin_small"
+                            android:background="@drawable/bg_shadow"
+                            android:layout_weight="1"
+                            android:gravity="center|end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextStyle1b"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="@string/change" />
+
+                            <ImageView
+                                imageDrawable="@{viewModel.stockDetails.isDown()?@drawable/ic_down:@drawable/ic_up}"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/lineChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

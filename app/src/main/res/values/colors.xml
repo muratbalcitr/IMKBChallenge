@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Sky Guideline -->
+    <color name="main_green">#00A886</color>
+    <color name="dark_green">#004E5A</color>
+    <color name="orange">#E86B48</color>
+    <color name="main_text">#3F414E</color>
+    <color name="dimmed_text">#A0A3B1</color>
+    <color name="unselected_menu_item">#E6E6E6</color>
+    <color name="soft_gray">#80CCD0E0</color>
+    <color name="alert">#E52929</color>
+    <color name="semi_alert">#F2B30F</color>
+    <color name="main_light_gray">#DADBE1</color>
+    <color name="soft_bg">#F6F8FC</color>
+    <color name="navigation_disabled">#BEC0C1</color>
+
+    <!-- Main Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+     <color name="sky_dark_green">#008489</color>
+     <color name="light_black">#4E4E53</color>
+    <color name="green">#10AB84</color>
+    <color name="moon">#8E97FD</color>
+    <color name="login_input_color">#f7f7fa</color>
+    <color name="gray">#AAA9A9</color>
+    <color name="blue">#007AFF</color>
+    <color name="light_blue">#412196F3</color>
+    <color name="login_shadow">#14323247</color>
+    <color name="shadow">#51323247</color>
+    <!-- Shadow Colors -->
+    <color name="shadow_01">#01CCD0E0</color>
+    <color name="shadow_02">#02CCD0E0</color>
+    <color name="shadow_03">#03CCD0E0</color>
+    <color name="shadow_04">#04CCD0E0</color>
+    <color name="shadow_05">#05CCD0E0</color>
+    <color name="shadow_06">#06CCD0E0</color>
+    <color name="shadow_07">#07CCD0E0</color>
+    <color name="shadow_08">#08CCD0E0</color>
+    <color name="shadow_09">#09CCD0E0</color>
+    <color name="shadow_10">#10CCD0E0</color>
+    <color name="shadow_11">#11CCD0E0</color>
+    <color name="shadow_12">#12CCD0E0</color>
+    <color name="shadow_13">#13CCD0E0</color>
+    <color name="shadow_14">#14CCD0E0</color>
+    <color name="shadow_15">#15CCD0E0</color>
+
+
+    <color name="shadow_16">#07CCD0E0</color>
+    <color name="shadow_17">#08CCD0E0</color>
+    <color name="shadow_18">#09CCD0E0</color>
+    <color name="shadow_19">#10CCD0E0</color>
+    <color name="shadow_20">#11CCD0E0</color>
+    <color name="shadow_21">#12CCD0E0</color>
+    <color name="text_main_color">#263843</color>
+
+    <color name="article_text_color">#383667</color>
+    <color name="tab_unselected_color">#A9A6C3</color>
+    <color name="background_color">#F9F4EC</color>
+    <color name="light_transparent">#52000000</color>
+    <color name="light_gray">#9A99A2</color>
+
+</resources>

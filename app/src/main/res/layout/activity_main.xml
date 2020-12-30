@@ -1,0 +1,182 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.murat.veripark.ui.main.MainViewModel" />
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.Navigation.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    app:title="@string/toolbar"
+                    app:titleTextColor="@color/main_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/main_text" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dp"
+                    android:background="@color/soft_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/sembol_text_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="@string/symbol"
+                        tools:text="123a" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dimmed_text" />
+
+                    <TextView
+                        android:id="@+id/price_text_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:text="@string/price"
+                        tools:text="123a" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dimmed_text" />
+
+                    <TextView
+                        android:id="@+id/diff_text_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:text="@string/diff"
+                        tools:text="123a" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dimmed_text" />
+
+                    <TextView
+                        android:id="@+id/volume_text_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:text="@string/volume"
+                        tools:text="123a" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dimmed_text" />
+
+                    <TextView
+                        android:id="@+id/buy_text_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="@string/buy"
+                        tools:text="123a" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dimmed_text" />
+
+                    <TextView
+                        android:id="@+id/sell_text_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="@string/sell"
+                        tools:text="123a" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dimmed_text" />
+
+                    <TextView
+                        android:id="@+id/change_image_view"
+                        style="@style/TextStyle0"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/change" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+                    tools:listitem="@layout/view_holder_stocks_item" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/view_menu_header"
+            app:menu="@menu/menu_left" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

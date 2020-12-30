@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Extra Margins -->
+    <dimen name="margin_0dp">0dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_27dp">27dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_72dp">72dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+    <dimen name="margin_83dp">83dp</dimen>
+    <dimen name="margin_96dp">96dp</dimen>
+    <dimen name="margin_100dp">100dp</dimen>
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_128dp">128dp</dimen>
+    <dimen name="margin_148dp">148dp</dimen>
+    <dimen name="margin_150dp">150dp</dimen>
+    <dimen name="margin_161dp">161dp</dimen>
+    <dimen name="margin_228dp">228dp</dimen>
+    <dimen name="margin_274dp">274dp</dimen>
+    <dimen name="margin_309dp">309dp</dimen>
+    <dimen name="margin_320dp">320dp</dimen>
+    <dimen name="margin_335dp">330dp</dimen>
+
+    <!-- Sky Guideline -->
+    <!-- Spacing -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_xlarge">64dp</dimen>
+    <dimen name="padding_page">20dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="radius_medium">8dp</dimen>
+    <dimen name="radius_large">16dp</dimen>
+
+    <!-- Typography -->
+    <dimen name="text_size_4">32sp</dimen>
+    <dimen name="text_size_3">24sp</dimen>
+    <dimen name="text_size_2">20sp</dimen>
+    <dimen name="text_size_1">16sp</dimen>
+    <dimen name="text_size_0">14sp</dimen>
+    <dimen name="text_size_n1">12sp</dimen>
+    <dimen name="text_size_n2">10sp</dimen>
+    <dimen name="text_size_n3">8sp</dimen>
+    <dimen name="margin_172dp">172dp</dimen>
+    <dimen name="margin_256">256dp</dimen>
+    <dimen name="margin_270dp">270dp</dimen>
+    <dimen name="margin_350dp">350dp</dimen>
+    <dimen name="margin_300dp">300dp</dimen>
+
+</resources>

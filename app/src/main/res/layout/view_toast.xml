@@ -1,0 +1,75 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:minHeight="@dimen/margin_48dp"
+        android:padding="@dimen/margin_medium" >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_text_view"
+            style="@style/TextStyle1b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:layout_marginEnd="@dimen/margin_medium"
+
+            android:gravity="start"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/description_text_view"
+            app:layout_constraintEnd_toStartOf="@id/action_button"
+            app:layout_constraintStart_toEndOf="@+id/info_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description_text_view"
+            style="@style/TextStyle0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:layout_marginEnd="@dimen/margin_medium"
+
+            android:gravity="start"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/action_button"
+            app:layout_constraintStart_toEndOf="@+id/info_image_view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/action_button"
+            style="@style/TextStyle0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_4dp"
+            android:paddingEnd="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_4dp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/info_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
