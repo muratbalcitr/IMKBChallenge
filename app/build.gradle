@@ -7,7 +7,7 @@ android {
     buildToolsVersion build_versions.build_tools
 
     defaultConfig {
-        applicationId "com.murat.usg_challenge"
+        applicationId "com.murat.veripark_challenge"
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
         versionCode app_versions.version_code
